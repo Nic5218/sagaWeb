@@ -27,7 +27,7 @@
 
 //////// divider /////////
 
-// this is the code for just the website
+// this is the code for just the website (working code)
 
 // const express = require('express');
 // const path = require('path');
@@ -69,7 +69,7 @@ const port = 3000;
 // const credentials = require('/Users/qianni/Documents/sagaWeb/public/saga-network-0876b0c0bb51.json');
 
 // Define the absolute path to your Google Sheets API credentials file
-const credentialsPath = path.join(__dirname, 'saga-network-0876b0c0bb51.json');
+const credentialsPath = path.join(__dirname, './saga-network-0876b0c0bb51.json');
 // Load the service account credentials from the JSON file
 const credentials = require(credentialsPath);
 
@@ -80,6 +80,8 @@ const auth = new google.auth.GoogleAuth({
 });
 
 const sheets = google.sheets({ version: 'v4', auth });
+
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
@@ -122,25 +124,12 @@ app.get('/search', async (req, res) => {
     }
 });
 
-// app.get('/linktodb', async (req, res) => {
-//     const spreadsheetId = '1kX0QzxGIgJ9NEUzNIXuEyfPQ63Xmsu3xdcB5L9GnJ3E'; //Njals_networks
-//     // full url: https://docs.google.com/spreadsheets/d/1kX0QzxGIgJ9NEUzNIXuEyfPQ63Xmsu3xdcB5L9GnJ3E/edit#gid=1044464888
-//     const range = 'Sheet1!A1:D730'; // TODO: Update with your actual sheet name and range
 
-//     try {
-//         const response = await sheets.spreadsheets.values.get({
-//             spreadsheetId,
-//             range,
-//         });
-
-//         const rows = response.data.values;
-//         res.json(rows);
-//     } catch (error) {
-//         console.error('The API returned an error:', error);
-//         res.status(500).json({ error: 'An error occurred while fetching data from Google Sheets.' });
-//     }
+// app.listen(port, () => {
+//     console.log(`Server is running on http://localhost:${port}`);
 // });
 
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
