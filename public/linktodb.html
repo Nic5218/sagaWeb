@@ -17,5 +17,43 @@
 
     <h1>Database</h1>
     <p>This is the database page content.</p>
+
+    <h1>Search in Google Sheets</h1>
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="search()">Search</button>
+    <div id="searchResults"></div>
+
+    <script>
+        async function search() {
+            const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
+
+            // Perform search request to the server
+            const response = await fetch(`/search?query=${encodeURIComponent(searchInput)}`);
+            const searchData = await response.json();
+
+            // Display search results
+            displaySearchResults(searchData);
+        }
+
+        function displaySearchResults(searchData) {
+            const searchResultsDiv = document.getElementById('searchResults');
+            searchResultsDiv.innerHTML = ''; // Clear previous search results
+
+            if (searchData.length === 0) {
+                searchResultsDiv.textContent = 'No results found.';
+                return;
+            }
+
+            const resultList = document.createElement('ul');
+            searchData.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.textContent = item.join(', '); // Customize based on your sheet's structure
+                resultList.appendChild(listItem);
+            });
+            searchResultsDiv.appendChild(resultList);
+        }
+    </script>
+
+
 </body>
 </html>

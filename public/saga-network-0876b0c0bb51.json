@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "saga-network",
+  "private_key_id": "0876b0c0bb519cb97b7a2ded547c9b28cf00ecc8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCef1/YnaYm2IbD\ni1VsM+XWnecPouw498o4Err1udEif+Rh8jkdNdzpjeA1JXjOhsz6qULl4geHzboE\nYRleAiydg5jxNQPRos06pFohzifQnjTAVAhhxJC/suhgf7Z6WhBTeFRIP3SG0T5K\nVdwna/kGOsMWOf2hftvphFGrnd/nvoEfx2714kkRWUugQ6SUK5Zx6T1gD76lZxM9\naDptzO6X7ae6n9LsE4fBxUn1YoOyFbwJgNyavw4aPb7Rf/TqJTpzMASb5BSm0Me8\nlVfNWbTmLv9i3U/LVcf0Eci1k/Dh9N+4od87nSn2lDf/0qWfU2Ks33bPja/ec0q7\nuHv/pxGzAgMBAAECggEARkNXPRMePihNDdDt7IrRQCQ983uZVuPaXKNJCHf4k1+4\n4gbcdOuU5GDF3SmgdYXixthUVM6v4e88oIZfFYLHPojBO2TyLXQLoQyM/GGE2wHX\nhs9568WVGbZ5N5ZGUdUtWaOFUYX35XBLOe74Ku29tppEM80/d+FiIhJLllXllbj2\nVt+GKRV8i0JsGdBH7XLTmz9HH2kaw4xFKFa9Ld5Pyw7hY2muKPZkBEYX4D02Xtza\nA9m5JCeqDs1EiB/GwgJ6IVX+gov1n12FEREMeqFtt5gUOo88mviL7wQe/alDKAQ0\nGIsvAWIDmgss5XKXsPzouOYKrdKL1+sZa3yqDy75gQKBgQDWmCK68xgJO+gbXkjE\nH3lOH6jDE8A10FfI2Czd3NtnZn+KLeXkn6XKASWC/cpg8nUz2e0cp8YD/pPRoOGL\nePC1jNqW9T91IggmrUePeFGf1ekidhaAi+xcNjKbQYO7tDp8DZR14wThIIw4bl5o\nagaFK78wQ4v5QC/oKaF+5CaQcwKBgQC9FFio5y/QU6G1zW+a0jJ9NQi042z0WmCN\nfVCH8JQ3rM115l1p/05ETER9KwawIw3Loa3pQieNrVCQ+6073L9KOclBsctUmcD3\n2QPpPK+us0vCahJgGQuWlkOBSakEn/l/BXAoLh+TfsgrIGzEBw+lR6+kYa7ja6aL\n5nD+QRdpwQKBgDZhl2uI7y5n4AoPeqE42KTToRDOkIcSpSxgm/4dWfx6HRgHSZsG\nWh027Sqk5gRrbQgW0d/RJH0eppcZDg8qNtXLPBnFTK+CUE582wWgmA7JRqtVAZ7R\n1rQHiAuQLrICmk+VoWm+fh4PAXnLfmE3fS+CRpEUjQQ9H+bVpfdiGePBAoGAb841\nMwMpydV6PQfSo8kBo/oVQOluhvteNqxQT2IaMuXSxJHI0SHvxQEYSq+Dj+nagXwE\nW3cL7oH6rxCzej9pOdn7wQYCRu94JNbFskh5ViOde8O/Q+XrbUtDdZL6B8sU/GBZ\n1tiXQV9pu967khrezIwcN2avxLjmTbmhPSd+UcECgYEAjdT8FdWvT0i7V66HWw+x\nhe1Kd+Ndv57vWZEkj8JXL0xq7TwLhROAHtT2iGOmaOMO44k5qeaxkPVZtA4TSGgs\n+MIs/KRS9xpgISND3E//eIyU3tYfQgK4PR9M8MhycL99M/wvALj8MPj73unZXbiV\nlKdfQEadcbz1LrQ34kWmOic=\n-----END PRIVATE KEY-----\n",
+  "client_email": "saga-data-sheets@saga-network.iam.gserviceaccount.com",
+  "client_id": "111845215959134729144",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/saga-data-sheets%40saga-network.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
