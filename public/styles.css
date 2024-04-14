@@ -8,6 +8,8 @@ nav {
     background-color: #a7836c;
     color: #fff;
     padding: 20px;
+    position: fixed; 
+    width: 100%;
 }
 
 nav ul {
@@ -28,14 +30,158 @@ nav a {
 
 .home-container {
     padding: 20px;
+    background-image: url('assets/iceland1.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    color: rgba(255, 255, 255, 1);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5em;
 }
+
+@media screen and (max-width: 800px) {
+
+  .home-container>h1 {
+    font-size: 1.2em;
+  }
+
+  .home-container>h2 {
+    font-size: 1em;
+  }
+}
+
+.home-title {
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .home-title {
+    font-size: 1em;
+  }
+}
+
+section {
+  text-align: center;
+}
+
+.separate-section1 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+img {
+  width: 100%; 
+  height: auto; 
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+p {
+  margin-top: 10px; /* Top margin */
+  margin-bottom: 20px; /* Bottom margin */
+  margin-left: 30px; /* Left margin */
+  margin-right: 30px; /* Right margin */
+  text-align: center;
+}
+
+/*About Page CSS*/
+
+.about_us {
+  padding: 20px;
+  text-align: center;
+  background-image: url('assets/iceland-about.jpg'); 
+  background-size: cover; 
+  background-position: center top;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2.5em;
+}
+
+.fades {
+  color: rgba(255, 255, 255, 1);
+}
+
+.pd {
+  margin-left: 30%;
+  margin-right: 30%;
+  color: black;
+}
+
+
+@media screen and (max-width: 800px) {
+  .pd {
+    font-size: 1em;
+  }
+}
+
+.poster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 20%;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.team{
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.team_intro {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.professor {
+  text-align: center;
+}
+
+.pi {
+  height: 20%;
+  width: 20%;
+}
+
+.student-container {
+    display: flex;
+}
+
+.section {
+    flex-basis: 30%;
+    padding: 20px;
+}
+
+/*Database page css*/ 
+.database {
+  background-image: url('assets/database-title2.jpg');
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-size: cover; 
+  background-position: center top;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2.5em;
+}
+
 
 footer {
     background-color: #a7836c;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
+    padding: 20px;
     bottom: 0;
     width: 100%;
+    position: fixed;
 }
+
