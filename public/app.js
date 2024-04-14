@@ -66,6 +66,10 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
+// Serve static files from the 'public' directory
+app.use(express.static("./"));
+
+
 // const credentials = require('/Users/qianni/Documents/sagaWeb/public/saga-network-0876b0c0bb51.json');
 
 // Define the absolute path to your Google Sheets API credentials file
