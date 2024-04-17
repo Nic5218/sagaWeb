@@ -66,8 +66,13 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
+
 // Serve static files from the 'public' directory
 app.use(express.static("./"));
+
+
+// Serve static files from the submodule's build directory
+app.use(express.static(path.join(__dirname, 'public/saga-web-visualization/build')));
 
 
 // const credentials = require('/Users/qianni/Documents/sagaWeb/public/saga-network-0876b0c0bb51.json');
@@ -98,6 +103,11 @@ app.get('/about', (req, res) => {
 app.get('/linktodb', (req, res) => {
     res.sendFile(path.join(__dirname, 'linktodb.html'));
 });
+
+app.get('/visualization', (req, res) => {
+    res.sendFile(path.join(__dirname, 'visualization.html'));
+});
+
 
 // Define a route to handle search requests
 app.get('/search', async (req, res) => {

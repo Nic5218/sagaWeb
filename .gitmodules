@@ -1,0 +1,3 @@
+[submodule "saga-web-visualization"]
+	path = saga-web-visualization
+	url = https://github.com/rrichardyu/saga-web-visualization.git
