@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <title>Link to Database</title>
 </head>
+
 <body>
     <nav>
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/linktodb">Link to Database</a></li>
+            <!--The 1st child of Main-->
+            <li><a href="../">Home</a></li>
+            <li><a href="../about">About</a></li>
+            <li><a href="../linktodb">Link to Database</a></li>
         </ul>
     </nav>
 
-    <h1>Database</h1>
-    <p>This is the database page content.</p>
+    <div class="database">
+        <h1>Database</h1>
+    </div>
 
     <h1>Search in Google Sheets</h1>
     <input type="text" id="searchInput" placeholder="Search...">
@@ -53,7 +57,10 @@
             searchResultsDiv.appendChild(resultList);
         }
     </script>
-
+    <footer>
+        <p>&copy; 2024 Icelandic Saga Database Website. All rights reserved.</p>
+    </footer>
 
 </body>
+
 </html>
